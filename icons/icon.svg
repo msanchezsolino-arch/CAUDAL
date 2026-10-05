@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A3360"/>
+      <stop offset="0.55" stop-color="#0F2244"/>
+      <stop offset="1" stop-color="#07132A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D29A"/>
+      <stop offset="0.5" stop-color="#C9A45C"/>
+      <stop offset="1" stop-color="#9C7A3C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.2" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+  <!-- ring: 3 arcs with gaps (pie motif) -->
+  <g fill="none" stroke-width="44" stroke-linecap="round" transform="translate(512 512)">
+    <circle r="300" stroke="url(#gold)" stroke-dasharray="880 1005" transform="rotate(-80)"/>
+    <circle r="300" stroke="#C9A45C" stroke-opacity="0.45" stroke-dasharray="420 1465" transform="rotate(115)"/>
+    <circle r="300" stroke="#C9A45C" stroke-opacity="0.22" stroke-dasharray="230 1655" transform="rotate(205)"/>
+  </g>
+  <!-- ascending bars -->
+  <g fill="url(#gold)">
+    <rect x="372" y="540" width="70" height="130" rx="14"/>
+    <rect x="477" y="460" width="70" height="210" rx="14"/>
+    <rect x="582" y="370" width="70" height="300" rx="14"/>
+  </g>
+  <rect x="352" y="700" width="320" height="10" rx="5" fill="#C9A45C" fill-opacity="0.55"/>
+</svg>
